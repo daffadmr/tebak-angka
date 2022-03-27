@@ -9,21 +9,24 @@ html {
 }
 
 body {
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
     vertical-align: middle;
     text-align: center;
+    margin-top: 200px;
 }
 
-.input{
+.input {
     margin-bottom: 20px;
 }
 
 
 .jawaban {
-    height: 30px;
+    height: 60px;
+    padding: 0 20px;
 }
 
-.button{
+.button {
     transition: .444s;
 }
