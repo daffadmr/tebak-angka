@@ -20,6 +20,14 @@ let i = 0;
 
 const disableButton = () => iniButton.disabled = 'true';
 
+inputan.addEventListener("keyup", (event) => {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      iniButton.click();
+    }
+  });
+
 iniButton.addEventListener('click', () => {
     const iniPilih = getPilih();
 
@@ -68,5 +76,5 @@ iniReset.addEventListener('click', () => {
     iniAngka.innerHTML = '?';
     jawaban.innerHTML = '';
     count.innerHTML = 'Count: 0';
-    console.log(angka);
+    inputan.value = '';
 });
