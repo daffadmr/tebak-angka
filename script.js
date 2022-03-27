@@ -74,7 +74,7 @@ iniReset.addEventListener('click', () => {
     angka = 0;
     angka += Math.floor(Math.random() * 10) + 1;
     iniAngka.innerHTML = '?';
-    jawaban.innerHTML = '';
+    jawaban.innerHTML = 'Masukan angka untuk menebak';
     count.innerHTML = 'Count: 0';
     inputan.value = '';
 });
